@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body data-blog-identifier="blog2">
+    <h1>Blog-2</h1>
+    <button id="darktoggle" onclick="toggleDarkMode()">Toggle</button>
+    <h2>The Power of Gratitude: A Daily Practice for a Positive Mindset</h2>
+    <p>In a world often consumed by challenges and uncertainties, cultivating gratitude can be a transformative tool for fostering a positive mindset. By taking a few moments each day to reflect on the things we are grateful for, we shift our focus from what's lacking to the abundance that surrounds us. This practice doesn't require grand gestures; it's about appreciating the simple joys, whether it's a warm cup of coffee, a kind gesture from a friend, or the beauty of a sunset. Research suggests that regular gratitude practice can lead to improved mental well-being, reduced stress, and increased overall happiness. Consider starting a gratitude journal, jotting down three things you're thankful for each day. As you make gratitude a habit, you'll discover a profound shift in your perspective, unlocking a reservoir of positivity that can brighten even the toughest days.</p>
+
+    <div id="like-section">
+        <i id="likelogo" onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+        <p> likes : <span id="like-count">0</span> </p>
+        <button id="like-btn" >Like</button>
+    </div>
+    <div id="comments-section">
+        <h3>Comments</h3>
+        <ul id="comments-list">
+        </ul>
+        <textarea id="comment-input" style="font-size: 30px;" placeholder="Add a comment"></textarea>
+        <br>
+        <button id="add-comment-btn" >Add Comment</button>
+    </div>
+    <br>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

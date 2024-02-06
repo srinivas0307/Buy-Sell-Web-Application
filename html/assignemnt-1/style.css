@@ -1,0 +1,341 @@
+body {
+  background-size: cover;
+  background-color: oldlace;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.decor{
+  color:green;
+}
+
+.fa {
+  padding: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+#darktoggle{
+    border-style: none;
+    color:aliceblue;
+    background-color: black;
+    font-size: 30px;
+    margin-left: auto;
+    float:right;
+    text-align: right;
+  }
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+#greetings {
+  width: 20px;
+  height: 20px;
+  font-size: 70px;
+  align-items: center;
+  text-align: center;
+  animation-name: hello;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
+header {
+  text-align: center;
+  color: white;
+  background-color: rgb(34, 37, 33);
+  background-image: linear-gradient(to right,violet,indigo, blue);
+}
+
+@keyframes hello {
+  from {
+    color: violet;
+  }
+
+  25% {
+    color: greenyellow;
+  }
+
+  50% {
+    color: red;
+  }
+
+  75% {
+    color: black;
+  }
+
+  to {
+    color: aqua;
+  }
+}
+
+
+nav {
+  color: white;
+  display: flex;
+  padding: 0.5%;
+  background-color: rgb(46, 48, 52);
+  justify-content: space-around;
+}
+
+.closebtn{
+  display: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover{
+  background-color: rgb(82, 78, 78);
+}
+
+.openbtn{
+  display:none;
+}
+
+#about {
+  display: block;
+  padding-left: 4%;
+  transform: translate(0%, 5%);
+  margin: 1%;
+  padding-right: 1%;
+}
+
+.profilepic {
+  border-radius: 60%;
+  width:45%;
+  float:right;
+  /* display:block; */
+  margin-left:auto;
+  margin-right:auto;
+  animation-name: layout;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+}
+
+@keyframes layout {
+  from {
+    border-radius: 10%;
+  }
+
+  25% {
+    border-radius: 30%;
+  }
+
+  50% {
+    border-radius: 40%;
+  }
+
+  75% {
+    border-radius: 50%;
+  }
+
+  to {
+    border-radius: 60%;
+  }
+}
+
+#social {
+  transform: translate(1%, 20%);
+}
+
+#education {
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+}
+
+.btech,
+.inter,
+.high_school,
+.primary {
+  border-style: groove;
+  border-radius: 45%;
+}
+
+#Achievements {
+  text-align: center;
+  margin: 2%;
+  display: flexbox;
+  padding-bottom: 3%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  text-align: center;
+  border-style: solid;
+}
+
+#skills {
+  text-align: center;
+  margin: 2%;
+  margin-left: 10%;
+  padding: 2%;
+}
+
+#blog {
+  text-align: center;
+  margin: 2%;
+  padding: 2%;
+}
+
+#blog a {
+  text-decoration: none;
+  color: violet;
+}
+
+.icons {
+  align-items: center;
+}
+
+.dark-mode {
+  background-color: rgba(65, 64, 64, 0.924);
+  color: aliceblue;
+}
+
+#clear-btn,
+#add-comment-btn,
+#like-btn {
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 40%;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1007px) {
+  header{
+    font-size: medium;
+    background-image: linear-gradient(to right, blue,indigo,violet);
+  }
+  body {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav a {
+    font-size: 16px;
+    /*  margin-bottom: 10px; */
+    margin-left:7px;
+  }
+
+  .sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 48, 52);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .closebtn{
+    display: block;
+  }
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }  
+
+  .openbtn:hover {
+    background-color:#444;
+  }
+
+  .openbtn {
+    display:flex;
+    margin-right:auto;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(46, 48, 52);
+    color: white;
+    border: none;
+  }
+
+  #dark {
+    font-size: 20px;
+    background-color: rgb(46, 48, 52);
+    color: white;
+    border: none;
+  }
+
+  .profilepic {
+    align-items: center;
+    float:unset;
+    width: 50%;
+  }
+
+  #greetings {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  #darktoggle{
+    border-style: none;
+    /* position: fixed; */
+    color:aliceblue;
+    background-color: black;
+    font-size: 10px;
+    margin-left: 90%;
+
+  }
+ 
+  #clear-btn,
+#add-comment-btn,
+#like-btn {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 10px;
+}
+}
